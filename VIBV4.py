@@ -7,7 +7,7 @@ import sys
 tf.compat.v1.reset_default_graph()
 
 # Turn on xla optimization
-config = tf.ConfigProto()
+config = tf.compat.v1.ConfigProto()
 config.graph_options.optimizer_options.global_jit_level = tf.OptimizerOptions.ON_1
 sess = tf.InteractiveSession(config=config)
 
