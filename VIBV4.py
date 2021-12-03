@@ -12,8 +12,8 @@ config.graph_options.optimizer_options.global_jit_level = tf.compat.v1.Optimizer
 sess = tf.compat.v1.InteractiveSession(config=config)
 
 
-from tensorflow.compat.v1.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
+import tensorflow_datasets
+mnist = tensorflow_datasets.load('mnist')
 n_sample = mnist.train.num_examples
 
 
