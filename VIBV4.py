@@ -9,7 +9,7 @@ tf.compat.v1.reset_default_graph()
 # Turn on xla optimization
 config = tf.compat.v1.ConfigProto()
 config.graph_options.optimizer_options.global_jit_level = tf.compat.v1.OptimizerOptions.ON_1
-sess = tf.InteractiveSession(config=config)
+sess = tf.compat.v1.InteractiveSession(config=config)
 
 
 from tensorflow.examples.tutorials.mnist import input_data
