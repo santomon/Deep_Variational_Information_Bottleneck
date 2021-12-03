@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import math
 import sys
 
-tf.reset_default_graph()
+tf.compat.v1.reset_default_graph()
 
 # Turn on xla optimization
 config = tf.ConfigProto()
